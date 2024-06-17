@@ -1,6 +1,8 @@
 # Hướng Dẫn Sử Dụng API
 
-## ENDPOINT: [https://apikey.phukhuong79.com/api/client.php](https://apikey.phukhuong79.com/api/client.php)
+## ENDPOINT PANEL MANAGER: [https://apikey.phukhuong79.com/](https://apikey.phukhuong79.com)
+
+## ENDPOINT API: [https://apikey.phukhuong79.com/api/client.php](https://apikey.phukhuong79.com/api/client.php)
 
 ## Method : GET
 - Với yêu cầu GET bạn sẽ truy vấn xem api của bạn có còn hạn , hết hạn hoặc đã đăng kí chưa.
