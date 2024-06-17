@@ -54,23 +54,52 @@ Phản hồi từ API sẽ là một đối tượng JSON chứa Thông Tin:
 }
 ```
 
-## Bản quyền
+## Method : POST
+- Với yêu cầu POST bạn sẽ đăng kí mới 1 API nếu API đó kiểm tra là chưa được đăng kí.
+### Tham Số Yêu Cầu
+Khi gửi yêu cầu POST đến API, bạn cần cung cấp các tham số sau:
 
-- Mã nguồn của dịch vụ này được công khai, cho phép bất kỳ ai xem, sửa đổi, và cải thiện nó.
-- Được phép sử dụng vào mục đích thương mại: tạo cổng thanh toán cho website, thông báo giao dịch cho nhân viện cửa hàng,...
-- Không sử dụng thương mại
+- `licensekey`:[TYPE=string] Mã Bản Quyền Của Bạn (Bắt Buộc). 
+- `client_api`:[TYPE=string] Mã Công Cụ Phía Máy Khách Của Bạn (Bắt Buộc).
+- `ngay_het_han`:[TYPE=string Format: "YYYY/MM/DD H:I:S"] Thời Gian Hết Hạn Của API  (Bắt Buộc).
+- `access_token`:[TYPE=string] AccessToken Lấy Ở Phần Thông Tin Cá Nhân Của Tài Khoản (Bắt Buộc).
 
-## Miễn trừ trách nhiệm
+### Ví Dụ Yêu Cầu
 
-- **Miễn Trừ Trách Nhiệm Pháp Lý**: Người phát triển mã nguồn không chịu trách nhiệm pháp lý cho bất kỳ thiệt hại hay tổn thất nào xuất phát từ việc sử dụng hoặc không thể sử dụng dịch vụ.
+```bash
+curl -G https://apikey.phukhuong79.com/api/client.php \
+    --data-urlencode "licensekey=Mã_Bản_Quyền_Của_Bạn" \
+    --data-urlencode "client_api=Mã_Công_Cụ_Phía_Máy_Khách_Của_Bạn" \
+    --data-urlencode "ngay_het_han=2024-06-17 11:46:58"\
+    --data-urlencode "access_token=AccessToken_Của_Bạn"
 
-- **Sử Dụng API Ngân Hàng Không Chính Thức**: Dịch vụ này hiện đang sử dụng các API của ngân hàng mà không có sự đồng ý chính thức từ các ngân hàng hoặc tổ chức tài chính liên quan. Do đó, người sáng lập và nhóm phát triển:
-  - Không chịu trách nhiệm cho bất kỳ vấn đề pháp lý hoặc hậu quả nào phát sinh từ việc sử dụng các API này.
-  - Không đảm bảo tính chính xác, độ tin cậy, hoặc tính sẵn có của dữ liệu lấy từ các API này.
-  - Khuyến cáo người dùng cần cân nhắc rủi ro pháp lý và an toàn thông tin khi sử dụng dịch vụ.
+```
+### Định Dạng Phản Hồi
+Phản hồi từ API sẽ là một đối tượng JSON chứa Thông Tin:
+### Nếu Đăng Kí Mới
 
-**Ghi Chú Quan Trọng:**
-
-- Việc sử dụng các API không chính thức này có thể vi phạm các quy định pháp lý và chính sách của ngân hàng.
-- Chúng tôi khuyến khích người dùng và các bên liên quan cân nhắc kỹ lưỡng trước khi sử dụng dịch vụ này cho các mục đích tài chính hoặc thanh toán quan trọng.
-- Người dùng nên tham khảo ý kiến từ chuyên gia pháp lý hoặc tài chính trước khi đưa ra quyết định dựa trên dữ liệu hoặc dịch vụ được cung cấp qua dịch vụ này.
+- `status`: Trạng Thái Của Truy Vấn -> 'success' .
+- `type`: Loại Truy Vấn -> 'register' .
+- `ngay_het_han`: Ngày Hết Hạn Của API .
+- `trang_thai`: 1 Trong 2 'Expires'(Hết Hạn) hoặc 'Active'(Còn Hạn).
+- 
+### Nếu API Đã Tồn Tại , Thì Sẽ UPDATE Lại Ngày Hết Hạn
+- `status`: Trạng Thái Của Truy Vấn -> 'success' .
+- `type`: Loại Truy Vấn -> 'extend' .
+- 
+### Ví Dụ Phản Hồi Thành Công ( Đăng Kí Mới )
+```json
+{
+    "status": "success",
+    "type": "register",
+    "ngay_het_han": "2024-09-24 22:54:08",
+    "trang_thai": "Active"
+}
+```
+### Ví Dụ Phản Hồi Thành Công ( Nếu API Đã Tồn Tại )
+```json
+{
+    "status": "error",
+    "msg":"extend"
+}
+```
