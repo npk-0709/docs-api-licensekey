@@ -1,6 +1,6 @@
 # Hướng Dẫn Sử Dụng API
 
-## POST: [https://apikey.phukhuong79.com/libs/transACB.php](https://apikey.phukhuong79.com/libs/transACB.php)
+## ENDPOINT: [https://apikey.phukhuong79.com/api/client.php](https://apikey.phukhuong79.com/api/client.php)
 
 API này cho phép bạn lấy thông tin các giao dịch từ tài khoản của bạn.
 
