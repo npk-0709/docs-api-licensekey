@@ -13,11 +13,12 @@ Khi gửi yêu cầu GET đến API, bạn cần cung cấp các tham số sau:
 
 ### Ví Dụ Yêu Cầu
 
-```http
-POST https://apikey.phukhuong79.com/libs/transACB.php
-Content-Type: application/x-www-form-urlencoded
+```bash
+curl -G https://apikey.phukhuong79.com/api/client.php \
+    --data-urlencode "licensekey=Mã_Bản_Quyền_Của_Bạn" \
+    --data-urlencode "client_api=Mã_Công_Cụ_Phía_Máy_Khách_Của_Bạn" \
+    --data-urlencode "access_token=AccessToken_Của_Bạn"
 
-username=your_username&password=your_password&account=your_account_number&row=number_of_transactions
 ```
 ### Định Dạng Phản Hồi
 Phản hồi từ API sẽ là một đối tượng JSON chứa danh sách các giao dịch. Mỗi giao dịch bao gồm các thông tin sau:
