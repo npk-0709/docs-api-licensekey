@@ -24,8 +24,8 @@ curl -G https://apikey.phukhuong79.com/api/client.php \
 Phản hồi từ API sẽ là một đối tượng JSON chứa Thông Tin:
 ### Nếu API Tồn Tại
 
-- `status`: Trạng Thái Của Truy Vấn.
-- `licensekey`: Mã Bản Quyền Của Bạn-> 'success' .
+- `status`: Trạng Thái Của Truy Vấn -> 'success'.
+- `licensekey`: Mã Bản Quyền Của Bạn.
 - `client_api`: Mã Công Cụ Phía Máy Khách Của Bạn.
 - `ngay_kich_hoat`: Ngày Kích Hoạt Lần Đầu Của API.
 - `ngay_het_han`: Ngày Hết Hạn Của API .
@@ -35,26 +35,23 @@ Phản hồi từ API sẽ là một đối tượng JSON chứa Thông Tin:
 - `status`: Trạng Thái Của Truy Vấn -> 'error'.
 - `msg`: Thông Báo Lỗi.
 - 
-### Ví Dụ Phản Hồi
+### Ví Dụ Phản Hồi Thành Công
 ```json
-[
-    {
-        "ID": "123456789",
-        "AMOUNT": 500000,
-        "TYPE": "IN",
-        "DESCRIPTION": "Salary payment",
-        "CURRENCY": "VND",
-        "DATE": "2024-06-13T10:00:00Z"
-    },
-    {
-        "ID": "987654321",
-        "AMOUNT": 200000,
-        "TYPE": "OUT",
-        "DESCRIPTION": "Electricity bill",
-        "CURRENCY": "VND",
-        "DATE": "2024-06-12T15:30:00Z"
-    }
-]
+{
+    "status": "success",
+    "licensekey": "KAUTO-4E7AF-EBCFB-xxxxx-xxxx-xxxxx",
+    "client_api": "ToolV1",
+    "ngay_kich_hoat": "2024-06-16 22:54:08",
+    "ngay_het_han": "2024-09-24 22:54:08",
+    "trang_thai": "Active"
+}
+```
+### Ví Dụ Phản Hồi Thất Bại
+```json
+{
+    "status": "error",
+    'msg':'Not Found'
+}
 ```
 
 ## Bản quyền
