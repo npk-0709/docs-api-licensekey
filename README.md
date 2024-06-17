@@ -35,7 +35,7 @@ Phản hồi từ API sẽ là một đối tượng JSON chứa Thông Tin:
 - `status`: Trạng Thái Của Truy Vấn -> 'error'.
 - `msg`: Thông Báo Lỗi.
 - 
-### Ví Dụ Phản Hồi Thành Công
+### Ví Dụ Phản Hồi Thành Công ( Tìm Thấy API Trong CSDL)
 ```json
 {
     "status": "success",
@@ -46,11 +46,11 @@ Phản hồi từ API sẽ là một đối tượng JSON chứa Thông Tin:
     "trang_thai": "Active"
 }
 ```
-### Ví Dụ Phản Hồi Thất Bại
+### Ví Dụ Phản Hồi Thất Bại( Không Tìm Thấy API Trong CSDL)
 ```json
 {
     "status": "error",
-    'msg':'Not Found'
+    "msg":"Not Found"
 }
 ```
 
