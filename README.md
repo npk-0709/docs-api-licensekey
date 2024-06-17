@@ -32,11 +32,11 @@ Phản hồi từ API sẽ là một đối tượng JSON chứa Thông Tin:
 - `ngay_kich_hoat`: Ngày Kích Hoạt Lần Đầu Của API.
 - `ngay_het_han`: Ngày Hết Hạn Của API .
 - `trang_thai`: 1 Trong 2 'Expires'(Hết Hạn) hoặc 'Active'(Còn Hạn).
-- 
+
 ### Nếu API Không Tồn Tại
 - `status`: Trạng Thái Của Truy Vấn -> 'error'.
 - `msg`: Thông Báo Lỗi.
-- 
+
 ### Ví Dụ Phản Hồi Thành Công ( Tìm Thấy API Trong CSDL)
 ```json
 {
@@ -84,11 +84,11 @@ Phản hồi từ API sẽ là một đối tượng JSON chứa Thông Tin:
 - `type`: Loại Truy Vấn -> 'register' .
 - `ngay_het_han`: Ngày Hết Hạn Của API .
 - `trang_thai`: 1 Trong 2 'Expires'(Hết Hạn) hoặc 'Active'(Còn Hạn).
-- 
+
 ### Nếu API Đã Tồn Tại , Thì Sẽ UPDATE Lại Ngày Hết Hạn
 - `status`: Trạng Thái Của Truy Vấn -> 'success' .
 - `type`: Loại Truy Vấn -> 'extend' .
-- 
+
 ### Ví Dụ Phản Hồi Thành Công ( Đăng Kí Mới )
 ```json
 {
