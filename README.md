@@ -2,16 +2,14 @@
 
 ## ENDPOINT: [https://apikey.phukhuong79.com/api/client.php](https://apikey.phukhuong79.com/api/client.php)
 
-API này cho phép bạn lấy thông tin các giao dịch từ tài khoản của bạn.
-
+## Method : GET
+- Với yêu cầu GET bạn sẽ truy vấn xem api của bạn có còn hạn , hết hạn hoặc đã đăng kí chưa.
 ### Tham Số Yêu Cầu
+Khi gửi yêu cầu GET đến API, bạn cần cung cấp các tham số sau:
 
-Khi gửi yêu cầu POST đến API, bạn cần cung cấp các tham số sau:
-
-- `username`: Tên đăng nhập của bạn.
-- `password`: Mật khẩu của bạn.
-- `account`: Số tài khoản mà bạn muốn truy vấn.
-- `row`: Số lượng giao dịch mà bạn muốn lấy.
+- `licensekey`: Mã Bản Quyền Của Bạn (Bắt Buộc).
+- `client_api`: Mã Công Cụ Phía Máy Khách Của Bạn (Bắt Buộc).
+- `access_token`: AccessToken Lấy Ở Phần Thông Tin Cá Nhân Của Tài Khoản (Bắt Buộc).
 
 ### Ví Dụ Yêu Cầu
 
