@@ -1,6 +1,6 @@
 # Hướng Dẫn Sử Dụng API
 
-## ENDPOINT PANEL MANAGER: [https://apikey.phukhuong79.com/](https://apikey.phukhuong79.com)
+## ENDPOINT PANEL MANAGER:<a href="https://apikey.phukhuong79.com" target="_blank">https://apikey.phukhuong79.com</a>
 
 ## ENDPOINT API: [https://apikey.phukhuong79.com/api/client.php](https://apikey.phukhuong79.com/api/client.php)
 
