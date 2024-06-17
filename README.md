@@ -105,3 +105,19 @@ Phản hồi từ API sẽ là một đối tượng JSON chứa Thông Tin:
     "msg":"extend"
 }
 ```
+
+## Thông Báo Lỗi Khác 
+### Không Có Access_Token or Access_Token Không Chính Xác
+```json
+{
+    "status": "error",
+    "msg": "XÁC THỰC THẤT BẠI"
+}
+```
+Hoặc
+```json
+{
+    "status": "error",
+    "msg": "Thiếu Trường `access_token`"
+}
+```
