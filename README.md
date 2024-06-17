@@ -7,9 +7,9 @@
 ### Tham Số Yêu Cầu
 Khi gửi yêu cầu GET đến API, bạn cần cung cấp các tham số sau:
 
-- `licensekey`: Mã Bản Quyền Của Bạn (Bắt Buộc).
-- `client_api`: Mã Công Cụ Phía Máy Khách Của Bạn (Bắt Buộc).
-- `access_token`: AccessToken Lấy Ở Phần Thông Tin Cá Nhân Của Tài Khoản (Bắt Buộc).
+- `licensekey`:[TYPE=string] Mã Bản Quyền Của Bạn (Bắt Buộc). 
+- `client_api`:[TYPE=string] Mã Công Cụ Phía Máy Khách Của Bạn (Bắt Buộc).
+- `access_token`:[TYPE=string] AccessToken Lấy Ở Phần Thông Tin Cá Nhân Của Tài Khoản (Bắt Buộc).
 
 ### Ví Dụ Yêu Cầu
 
@@ -21,15 +21,20 @@ curl -G https://apikey.phukhuong79.com/api/client.php \
 
 ```
 ### Định Dạng Phản Hồi
-Phản hồi từ API sẽ là một đối tượng JSON chứa danh sách các giao dịch. Mỗi giao dịch bao gồm các thông tin sau:
+Phản hồi từ API sẽ là một đối tượng JSON chứa Thông Tin:
+### Nếu API Tồn Tại
 
-- `ID`: ID của giao dịch.
-- `AMOUNT`: Số tiền giao dịch.
-- `TYPE`: Loại giao dịch, có thể là "IN" (vào) hoặc "OUT" (ra).
-- `DESCRIPTION`: Mô tả của giao dịch.
-- `CURRENCY`: Đơn vị tiền tệ của giao dịch.
-- `DATE`: Ngày thực hiện giao dịch.
-
+- `status`: Trạng Thái Của Truy Vấn.
+- `licensekey`: Mã Bản Quyền Của Bạn-> 'success' .
+- `client_api`: Mã Công Cụ Phía Máy Khách Của Bạn.
+- `ngay_kich_hoat`: Ngày Kích Hoạt Lần Đầu Của API.
+- `ngay_het_han`: Ngày Hết Hạn Của API .
+- `trang_thai`: 1 Trong 2 'Expires'(Hết Hạn) hoặc 'Active'(Còn Hạn).
+- 
+### Nếu API Không Tồn Tại
+- `status`: Trạng Thái Của Truy Vấn -> 'error'.
+- `msg`: Thông Báo Lỗi.
+- 
 ### Ví Dụ Phản Hồi
 ```json
 [
