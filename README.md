@@ -1,10 +1,10 @@
 # Hướng Dẫn Sử Dụng API LICENSE v2.0
 
-## ENDPOINT PANEL MANAGER: <a href="https://apikey.phukhuong79.com" target="_blank" >https://apikey.phukhuong79.com</a>
+### ENDPOINT PANEL MANAGER: <a href="https://apikey.phukhuong79.com" target="_blank" >https://apikey.phukhuong79.com</a>
 
-## ENDPOINT API: <a href="https://apikey.phukhuong79.com/api/client.php" target="_blank" >https://apikey.phukhuong79.com/api/client.php</a>
+### ENDPOINT API: <a href="https://apikey.phukhuong79.com/api/client.php" target="_blank" >https://apikey.phukhuong79.com/api/client.php</a>
 
-## ACCESS_TOKEN DEMO : `7c0f4afa2c5a539da7b7c8c6e05ddd21`
+### ACCESS_TOKEN DEMO : `7c0f4afa2c5a539da7b7c8c6e05ddd21`
 
 ## Method : GET
 - Với yêu cầu GET bạn sẽ truy vấn xem api của bạn có còn hạn , hết hạn hoặc đã đăng kí chưa.
