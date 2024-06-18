@@ -15,15 +15,6 @@ Khi gửi yêu cầu GET đến API, bạn cần cung cấp các tham số sau:
 - `client_api`:[TYPE=string] Mã Công Cụ Phía Máy Khách Của Bạn (Bắt Buộc).
 - `access_token`:[TYPE=string] AccessToken Lấy Ở Phần Thông Tin Cá Nhân Của Tài Khoản (Bắt Buộc).
 
-### Ví Dụ Yêu Cầu
-
-```bash
-curl -G https://apikey.phukhuong79.com/api/client.php \
-    --data-urlencode "licensekey=Mã_Bản_Quyền_Của_Bạn" \
-    --data-urlencode "client_api=Mã_Công_Cụ_Phía_Máy_Khách_Của_Bạn" \
-    --data-urlencode "access_token=AccessToken_Của_Bạn"
-
-```
 ### Định Dạng Phản Hồi
 Phản hồi từ API sẽ là một đối tượng JSON chứa Thông Tin:
 ### Nếu API Tồn Tại
@@ -68,16 +59,6 @@ Khi gửi yêu cầu POST đến API, bạn cần cung cấp các tham số sau:
 - `ngay_het_han`:[TYPE=string Format: "YYYY/MM/DD H:I:S"] Thời Gian Hết Hạn Của API  (Bắt Buộc).
 - `access_token`:[TYPE=string] AccessToken Lấy Ở Phần Thông Tin Cá Nhân Của Tài Khoản (Bắt Buộc).
 
-### Ví Dụ Yêu Cầu
-
-```bash
-curl -G https://apikey.phukhuong79.com/api/client.php \
-    --data-urlencode "licensekey=Mã_Bản_Quyền_Của_Bạn" \
-    --data-urlencode "client_api=Mã_Công_Cụ_Phía_Máy_Khách_Của_Bạn" \
-    --data-urlencode "ngay_het_han=2024-06-17 11:46:58"\
-    --data-urlencode "access_token=AccessToken_Của_Bạn"
-
-```
 ### Định Dạng Phản Hồi
 Phản hồi từ API sẽ là một đối tượng JSON chứa Thông Tin:
 ### Nếu Đăng Kí Mới
