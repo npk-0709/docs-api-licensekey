@@ -2,7 +2,7 @@
 
 ### ENDPOINT PANEL MANAGER: <a href="https://apikey.phukhuong79.com" target="_blank" >https://apikey.phukhuong79.com</a>
 
-### ENDPOINT API: <a href="https://apikey.phukhuong79.com/api/client.php" target="_blank" >https://apikey.phukhuong79.com/api/client.php</a>
+### ENDPOINT API: <a href="https://apikey.phukhuong79.com/client/v1/client.php" target="_blank" >https://apikey.phukhuong79.com/client/v1/client.php</a>
 
 ### ACCESS_TOKEN DEMO : `7c0f4afa2c5a539da7b7c8c6e05ddd21`
 
