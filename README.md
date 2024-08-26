@@ -4,7 +4,7 @@
 
 ### ENDPOINT API: <a href="https://apikey.phukhuong79.com/client/v1/client.php" target="_blank" >https://apikey.phukhuong79.com/client/v1/client.php</a>
 
-### ACCESS_TOKEN DEMO : `7c0f4afa2c5a539da7b7c8c6e05ddd21`
+### ACCESS_TOKEN Lấy Ở : <a href="https://apikey.phukhuong79.com/views/info.php" target="_blank" >https://apikey.phukhuong79.com/views/info.php</a>
 
 ## Method : GET
 - Với yêu cầu GET bạn sẽ truy vấn xem api của bạn có còn hạn , hết hạn hoặc đã đăng kí chưa.
