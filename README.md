@@ -1,10 +1,10 @@
 # Hướng Dẫn Sử Dụng API LICENSE v1.0
 
-### ENDPOINT PANEL MANAGER: <a href="https://apikey.phukhuong79.com" target="_blank" >https://apikey.phukhuong79.com</a>
+### ENDPOINT PANEL MANAGER: <a href="https://license.phukhuong79.com" target="_blank" >https://license.phukhuong79.com</a>
 
-### ENDPOINT API: <a href="https://apikey.phukhuong79.com/client/v1/client.php" target="_blank" >https://apikey.phukhuong79.com/client/v1/client.php</a>
+### ENDPOINT API: <a href="https://license.phukhuong79.com/client/v1/client.php" target="_blank" >https://license.phukhuong79.com/client/v1/client.php</a>
 
-### ACCESS_TOKEN Lấy Ở : <a href="https://apikey.phukhuong79.com/views/info.php" target="_blank" >https://apikey.phukhuong79.com/views/info.php</a>
+### ACCESS_TOKEN Lấy Ở : <a href="https://license.phukhuong79.com/views/info.php" target="_blank" >https://license.phukhuong79.com/views/info.php</a>
 
 ## Method : GET
 - Với yêu cầu GET bạn sẽ truy vấn xem api của bạn có còn hạn , hết hạn hoặc đã đăng kí chưa.
