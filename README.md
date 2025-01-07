@@ -128,7 +128,7 @@ class LicenseAuth:
         self.clientApi = clientApi
         self.flex_code = "KDevTeam"
         self.licensekey = self.generateLicenseCode()
-        self.access_token = '1ecc5d344277f7d5532bee1179a424df'
+        self.access_token = 'TOKEN CỦA BẠN '
         self.serverUrl = 'https://license.phukhuong79.com'
         self.serverUrlEnpoint = '/client/v1/client.php'
         self.timeOut = 10
