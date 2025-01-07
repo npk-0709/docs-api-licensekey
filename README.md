@@ -105,8 +105,8 @@ Hoặc
 }
 ```
 
-#--------------------------------------------
-Code mẫu Demo
+# --------------------------------------------
+# Code mẫu Demo
 ```python
 """
     # Copyright © 2024 By Nguyễn Phú Khương (KDevTeam)
